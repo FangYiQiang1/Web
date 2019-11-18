@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>纳兰写真更多</title>
+    <link rel="stylesheet" href="css/index2.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="bg">
+        <div class="container clearFloat">
+            <div class="logo clearFloat"><img src="images/img-0.png" alt=""></div>
+            <div class="Collection">
+                <div class="item">设为首页</div>
+                <div class="item">在线客服</div>
+                <div class="item">联系我们</div>
+            </div>
+            <div class="login clearFloat">
+                <div class="item">用户名：<input type="text"></div>
+                <div class="item">密码：<input type="text"></div>
+                <input type="button" value="登录">
+            </div>
+        </div>
+        <div class="nav clearFloat">
+            <div class="item">首页</div>
+            <div class="item">关于纳兰</div>
+            <div class="item">纳兰活动</div>
+            <div class="item">纳兰写真</div>
+            <div class="item">纳兰婚纱</div>
+            <div class="item">纳兰礼服</div>
+            <div class="item">商业摄影</div>
+            <div class="item">纳兰服务</div>
+            <div class="item">爱情炫耀</div>
+            <div class="item">VIP专区</div>
+            <div class="item">加入我们</div>
+        </div>
+    </div>
+</div>
+<div class="image">
+    <div id="banner_tabs" class="flexslider">
+        <ul class="slides">
+            <li>
+                <a title="" target="_blank" href="#">
+                    <img width="1920" height="482" alt="" style="background: url(images/banner1.jpg) no-repeat center;" src="images/img-0.png">
+                </a>
+            </li>
+            <li>
+                <a title="" href="#">
+                    <img width="1920" height="482" alt="" style="background: url(images/banner2.jpg) no-repeat center;" src="images/main_photo.png">
+                </a>
+            </li>
+            <li>
+                <a title="" href="#">
+                    <img width="1920" height="482" alt="" style="background: url(images/banner3.jpg) no-repeat center;" src="images/ourteam.png">
+                </a>
+            </li>
+        </ul>
+        <ul class="flex-direction-nav">
+            <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+            <li><a class="flex-next" href="javascript:;">Next</a></li>
+        </ul>
+        <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>2</a></li>
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            var bannerSlider = new Slider($('#banner_tabs'), {
+                time: 5000,
+                delay: 400,
+                event: 'hover',
+                auto: true,
+                mode: 'fade',
+                controller: $('#bannerCtrl'),
+                activeControllerCls: 'active'
+            });
+            $('#banner_tabs .flex-prev').click(function() {
+                bannerSlider.prev()
+            });
+            $('#banner_tabs .flex-next').click(function() {
+                bannerSlider.next()
+            });
+        })
+    </script>
+</div>
+<div class="footer clearFloat">
+    <div class="left clearFloat">
+        <div class="title_line">
+            <div class="name"><span>关于</span><span>纳兰</span><span>About nalan</span></div>
+            <div class="MORE"><span>MORE>></span></div>
+        </div>
+        <div class="wenzhang">纳兰摄影工作室，以室内外写真婚纱为主，寻找属于你的独特美丽。我们将为你选择一种优秀的美丽表达方式。我们的机器有：佳能1Ds Mark2、5D Mark2等以及灯光上拥有U2全能1000W专业室内摄影灯。以及最优秀的摄影师、造型师、后期师。<span>以你的个性及思想表达为根本核心，加以精心的主题设计，贴心的化妆与修饰！</span></div>
+    </div>
+    <div class="mid clearFloat">
+        <div class="title_line">
+            <div class="name"><span>我们</span><span>的团队</span><span>Our team</span></div>
+            <div class="MORE"><span>MORE>></span></div>
+        </div>
+        <div class="item"><img src="./images/ourteam.png" alt=""></div>
+    </div>
+    <div class="right clearFloat">
+        <div class="title_line">
+            <div class="name"><span>快捷</span><span>入口</span><span>Quick entry</span></div>
+            <div class="MORE"><span>MORE>></span></div>
+        </div>
+        <div class="write">关于我们 ABOUT<br>顾客分享 SHOWLOVE<br>招贤纳士 CAREERS<br>个性写真 PHOTO<br>旅行婚纱 W.P.T.<br>传媒合作 MEDIA<br>婚纱摄影 WEDDING
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="item">地址：上海市纳兰婚摄摄影工作室</div>
+        <div class="item">Emal:www.xxxx@.163.com  联系电话：0281-88888888<span>版权信息：上海纳兰婚纱摄影工作室所有</span></div>
+    </div>
+</div>
+</body>
+</html>
+
